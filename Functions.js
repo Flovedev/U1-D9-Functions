@@ -62,13 +62,13 @@ title("Exercise 3");
 
 function crazyDiff(diff) {
     if (diff > 19) {
-        return (diff - 19) * 3
+        return Math.abs(diff - 19) * 3
     } else {
-        return 19 - diff
+        return Math.abs(19 - diff)
     }
 }
 
-let diffExmp1 = crazyDiff(9);
+let diffExmp1 = crazyDiff(-9);
 let diffExmp2 = crazyDiff(30);
 console.log("Crazy Difference1:", diffExmp1);
 console.log("Crazy Difference2:", diffExmp2);
@@ -203,6 +203,9 @@ console.log("Slice first and last character", exc9);
 
 title("Exercise 10");
 
+function giveMeRandom() {
+    return Math.floor(Math.random() * max) + 1;
+}
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
