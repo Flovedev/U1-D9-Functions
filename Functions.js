@@ -203,6 +203,12 @@ console.log("Slice first and last character", exc9);
 
 title("Exercise 10");
 
+function giveMeRandom(max) {
+    return Math.floor(Math.random() * max) + 1;
+}
+
+let random = giveMeRandom(10);
+console.log(random)
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
